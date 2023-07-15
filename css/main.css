@@ -145,6 +145,23 @@ body {
   margin-top: 0;
   margin-bottom: 30px;
 }
+
+footer{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: space-evenly;
+  margin: 10px 30px;
+}
+
+footer p{
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+}
+
+footer a{
+  text-decoration: none;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -233,8 +250,42 @@ body {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for Tablet */
+
+  /* body{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  } */
+
+  .content-wrapper{
+    width: 300px;
+    display: flex; 
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  .half-content{
+    width: 290px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .half-width{
+    text-align: center;
+    margin: 10px 30px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  body{
+    /* display: flex; */
+    /* flex-flow: row nowrap; */
+    /* justify-content: space-between; */
+  }
+
 }
 
 @media print,
